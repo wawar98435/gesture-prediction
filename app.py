@@ -163,7 +163,7 @@ if uploaded_file is not None:
     # Load keypoint classifier
     keypoint_classifier = KeyPointClassifier()
 
-    with open('model/keypoint_classifier/keypoint_classifier_label.csv', encoding='utf-8-sig') as f:
+    with open('keypoint_classifier_label.csv', encoding='utf-8-sig') as f:
         keypoint_classifier_labels = csv.reader(f)
         keypoint_classifier_labels = [row[0].strip() for row in keypoint_classifier_labels]
 
